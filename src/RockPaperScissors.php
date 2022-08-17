@@ -12,6 +12,14 @@ class RockPaperScissors {
         if($j1 == 'paper' && $j2 == 'rock'){
             return $player;
         }
+        if($j1 == 'scissors' && $j2 == 'paper'){
+            return $player;
+        }
+
+        if(($j1 == 'scissors' && $j2 == 'scissors')||($j1 == 'paper' && $j2 == 'paper')||($j1 == 'rock' && $j2 == 'rock')){
+            return "Empate";
+        }
+
         return "Jugador '2' ha ganado";
 
     }
