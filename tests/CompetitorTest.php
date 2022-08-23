@@ -10,7 +10,34 @@ use PHPUnit\Framework\TestCase;
 
 class CompetitorTest extends TestCase
 {
-    public function test_competitor_choice_Rock(){
-        
+    public function test_competitor_choice_rock(){
+        $competitor = new Competitor;
+        $rock = new Rock;
+
+        $competitor->choose("Rock");
+        $result = $competitor->getSign();
+
+        $this->assertEquals($rock, $result);
+    }
+
+    public function test_competitor_choice_scissors(){
+        $competitor = new Competitor;
+        $scissors = new Scissors;
+
+        $competitor->choose("Scissors");
+        $result = $competitor->getSign();
+
+        $this->assertEquals($scissors, $result);
+    }
+
+    public function test_competitor_choice_paper()
+    {
+        $competitor = new Competitor;
+        $paper = new Paper;
+
+        $competitor->choose("Paper");
+        $result = $competitor->getSign();
+
+        $this->assertEquals($paper, $result);
     }
 }

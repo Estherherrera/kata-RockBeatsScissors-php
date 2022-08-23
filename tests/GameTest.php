@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 
 class GameTest extends TestCase {
-    public function test_competitor1_Rock_competitor2_scissors()
+    public function test_competitor1_rock_competitor2_scissors()
     {
         //given
         $game = new Game;

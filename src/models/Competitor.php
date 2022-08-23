@@ -21,7 +21,7 @@ class Competitor{
             $this->sign = new Rock;
         }
         
-        if($sign == "Scissor"){
+        if($sign == "Scissors"){
             $this->sign = new Scissors;
         }
     }
