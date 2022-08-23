@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use App\Models\sign;
+use App\Models\Sign;
 
-class Paper extends sign {
+class Paper extends Sign {
 
     public function __construct()
     {

@@ -4,7 +4,7 @@ namespace App\Models;
 
 abstract class Sign {
    
-    private $choice;
+    protected $choice;
 
     public function getChoice()
     {
